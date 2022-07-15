@@ -7,7 +7,7 @@ import Button from "../components/button"
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "Gatsby Starter Personal Website"
+    const siteTitle = "Felix Suarez's Site"
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -15,19 +15,18 @@ class IndexPage extends React.Component {
           title="Home"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" />
+        <img style={{ margin: 0,alignItems:"center" }} src="./picture/felix.jpg" alt="Felix Suarez Face" />
         <h1>
           Hey people{" "}
           <span role="img" aria-label="wave emoji">
             👋
           </span>
         </h1>
-        <p>Welcome to your new Gatsby website. You are on your home page.</p>
+        <p>Welcome to my new website. You are on your home page.</p>
         <p>
-          This starter comes out of the box with styled components and Gatsby's
-          default starter blog running on Netlify CMS.
+        Electrical engineer with a specialty in robotics, machine learning, and software development. I hold a master's degree in energy and a master's degree in robotics. I also have a background as a professor at the University of Costa Rica. I have twelve years of coding experience in different languages such as C/C++ and Python. I have supported complex applications used in VLSI design, developed machine learning models, and coded microservices in AWS.
         </p>
-        <p>Now go build something great!</p>
+        <p>Get in touch for business!</p>
         <Link to="/blog/">
           <Button marginTop="35px">Go to Blog</Button>
         </Link>

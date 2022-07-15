@@ -1,13 +1,16 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Gatsby Starter Personal Blog`,
+    title: `Felix Suarez's Site`,
+
+    
+
     author: `Gatsby`,
     description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
       twitter: `gatsbyjs`,
-    },
+    }
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,
@@ -16,6 +19,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    
     {
       resolve: "gatsby-plugin-local-search",
       options: {
@@ -74,6 +78,14 @@ module.exports = {
         name: `assets`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `backgrounds`,
+        path: `${__dirname}/static/picture/cats`, // wherever background images are stored
+      },
+    },
+    
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
